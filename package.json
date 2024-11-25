@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "npx nodemon src/server.js"
+    "start": "node app.js",
+    "dev": "npx nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +14,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
-    "fs-extra": "^11.2.0",
-    "handlebars": "^4.7.8",
-    "pg": "^8.13.1"
+    "fs-extra": "^11.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"

@@ -8,9 +8,12 @@ const plantillaListado = handlebars.compile(fs.readFileSync(path.resolve( __dirn
 
 const server = http.createServer(async (req, res) => {
   if (req.url === '/' && req.method === 'GET') {
+
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end(plantillaFormulario());
+    res.end( plantillaFormulario() );
+
   } else if (req.url === '/registrar' && req.method === 'POST') {
+    
     let body = '';
     req.on('data', (chunk) => (body += chunk));
     req.on('end', async () => {
@@ -26,7 +29,7 @@ const server = http.createServer(async (req, res) => {
 
       const productos = await leerProductos();
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(plantillaListado({ productos }));
+      res.end( plantillaListado({ productos } ));
     });
 
   } else {

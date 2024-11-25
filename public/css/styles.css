@@ -1,0 +1,48 @@
+@scope (#promociones) {
+    header {
+        background-color: #264653;
+        padding: 20px 0;
+    }
+    
+    .promo-card {
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    
+    .promo-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e76f51;
+    }
+}
+
+@scope (#menu) {
+    header {
+        background-color: #f4a261;
+        color: white;
+        padding: 40px 0;
+    }
+
+    h3 {
+        color: #2a9d8f;
+        border-bottom: 2px solid #e76f51;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+        font-size: 18px;
+        border-bottom: 1px dashed #ccc;
+    }
+}

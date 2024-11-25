@@ -1,0 +1,27 @@
+<!-- Menú destacado -->
+<!-- Sección de Bienvenida -->
+<header id="welcome" class="bg-danger text-white text-center py-5">
+    <h1>Bienvenido a ElevenFoods</h1>
+    <p class="lead">Sabores que deleitan tus sentidos</p>
+    <a href="/menu" class="btn btn-primary mt-3">Explora Nuestro Menú</a>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Platos Destacados</h2>
+        <div class="row">
+
+            {{#each productos}}
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{{src}}" class="card-img-top" alt="Plato 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{nombre}}</h5>
+                        <p class="card-text">${{precio}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

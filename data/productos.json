@@ -5,7 +5,7 @@
         "descripcion": "Hot dog con palta, tomate y mayonesa.",
         "precio": 2500,
         "promocion": true,
-        "src": "../public/img/completo.jpg"
+        "src": "/public/img/completo.jpg"
     },
     {
         "id": 2,
@@ -13,15 +13,15 @@
         "descripcion": "Sandwich con carne, porotos verdes, ají y tomate.",
         "precio": 4500,
         "promocion": false,
-        "src": "../public/img/chacarero.jfif"
+        "src": "/public/img/chacarero.jfif"
     },
     {
         "id": 3,
         "nombre": "Barros Luco",
         "descripcion": "Sandwich de carne y queso derretido.",
         "precio": 4000,
-        "promocion": true,
-        "src": "../public/img/barrosLuco.jpeg"
+        "promocion": false,
+        "src": "/public/img/barrosLuco.jpeg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "descripcion": "Sandwich de jamón y queso derretido.",
         "precio": 3500,
         "promocion": false,
-        "src": "../public/img/barrosjarpa.jfif"
+        "src": "/public/img/barrosjarpa.jfif"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "descripcion": "Empanada rellena de carne, cebolla, huevo y aceitunas.",
         "precio": 2000,
         "promocion": true,
-        "src": "../public/img/empanada.jfif"
+        "src": "/public/img/empanada.jfif"
     },
     {
         "id": 6,
@@ -45,15 +45,15 @@
         "descripcion": "Porción de papas fritas crocantes.",
         "precio": 1500,
         "promocion": false,
-        "src": "../public/img/papasFritas.jfif"
+        "src": "/public/img/papasFritas.jfif"
     },
     {
         "id": 7,
         "nombre": "Sopaipillas",
         "descripcion": "Frituras de masa de harina y zapallo.",
         "precio": 800,
-        "promocion": true,
-        "src": "../public/img/sopaipillas.jfif"
+        "promocion": false,
+        "src": "/public/img/sopaipillas.jfif"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "descripcion": "Bebida dulce con trigo mote y duraznos deshidratados.",
         "precio": 1200,
         "promocion": false,
-        "src": "../public/img/moteconhuesillos.jfif"
+        "src": "/public/img/moteconhuesillos.jfif"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "descripcion": "Papas fritas con carne, huevo y cebolla frita.",
         "precio": 5500,
         "promocion": true,
-        "src": "../public/img/chorrillana.jfif"
+        "src": "/public/img/chorrillana.jpg"
     },
     {
         "id": 10,
@@ -77,6 +77,6 @@
         "descripcion": "Hamburguesa con palta, tomate, lechuga y mayonesa.",
         "precio": 3000,
         "promocion": false,
-        "src": "../public/img/hambChilena.jfif"
+        "src": "/public/img/hambChilena.jfif"
     }
 ]
