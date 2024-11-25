@@ -9,7 +9,7 @@ require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 3000
 
-// Sending static files with Express 
+// Sending static files with Express  comment
 app.use('/public', express.static(path.join(__dirname + '/public')));
 
 const hbs = expbs.create({
