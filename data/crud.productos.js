@@ -6,6 +6,7 @@ class CrudProducto {
     async leerProductos() {
         try {
             const productos = await fs.readJson(archivoProducto);
+            console.log("leerProductos: " + productos.length)
             return productos;
         } catch (error) {
             console.log(error)
@@ -31,7 +32,7 @@ class CrudProducto {
         if (!productos) return []
 
         const promos = productos.filter(p => p.promocion)
-        console.log(promos)
+        console.log("get promos: " + promos.length)
         if(promos.length > 1) return promos
         return [promos]
     }
