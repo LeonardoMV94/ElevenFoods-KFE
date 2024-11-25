@@ -39,6 +39,11 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use((req, res, next) => {
+    console.log(`Solicitud entrante: ${req.method} ${req.url}`)
+    next()
+})
+
 // Configure Routes
 app.use('/', routes);
 
