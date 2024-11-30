@@ -4,6 +4,7 @@ const crudProductos = require('../data/crud.productos')
 
 router.get('/', async (req, res) => {
   const productos = await crudProductos.leerProductos()
+
   res.render('home', {
     layout: 'index',
     productos,
@@ -40,8 +41,11 @@ router.get('/contacto', (req, res) => {
     titulo: 'Contacto'
   })
 })
+
 router.post('/contacto', (req, res) => {
-  res.render('gracias', {
+  const body = req.body
+  console.log(body)
+  res.status(201).render('gracias', {
     layout: 'index',
     titulo: 'Contacto'
   })

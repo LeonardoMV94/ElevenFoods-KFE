@@ -10,12 +10,12 @@ const app = express()
 const port = process.env.PORT || 3000
 
 // Sending static files with Express  comment
-app.use('/public', express.static(path.join(__dirname + '/public')))
+app.use('/public', express.static(path.join(__dirname, '/public')))
 
 const hbs = expbs.create({
   defaultLayout: 'home',
-  layoutsDir: __dirname + '/views/layouts', // capeta de layout
-  partialsDir: __dirname + '/views/partials', // carpeta de partials
+  layoutsDir: path.join(__dirname, '/views/layouts'), // capeta de layout
+  partialsDir: path.join(__dirname, '/views/partials'), // carpeta de partials
   extname: '.hbs',
   // helpers
   helpers: {
